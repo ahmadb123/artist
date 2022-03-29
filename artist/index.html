@@ -1,0 +1,139 @@
+<!doctype html> <!-- doctype tag must exist at the top of every html5 file -->
+
+<html lang="en">
+<!-- head section -- the "backstage" area of the web page -->
+
+<head>
+
+
+	<!--viewport-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- meta tags -->
+	<meta charset="utf-8" />
+	<meta name="description" content="Learn how to properly take care of your body">
+	<meta name="keywords" content="health, exercise, diet, strength, cardio, stress, workout, eat right">
+	<meta name="author" content="Michael Roberts">
+
+	<!-- shiv/shim - Helps Internet Explorer older than v. 9 work correctly with html5 -->
+	<!--[if lt IE 9]> <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
+
+	<!-- stylesheet links -->
+	<link rel="stylesheet" href="/styles/normalize.css">
+	<link rel="stylesheet" href="styles/main.css">
+
+
+	<!-- favicon link -->
+	<link rel="icon" href="images/favicon.ico">
+
+	<!-- title tag -->
+	<title>Lady A Image Gallery</title>
+
+
+	<!--SLICKNAV-->
+	<link rel="stylesheet" href="styles/slicknav.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="js/jquery.slicknav.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$('#nav_menu').slicknav({ prependTo: "#mobilemenu" });
+		});
+	</script>
+
+</head>
+
+<!-- body - contains the entire visible area of the web page and all it's containers --->
+
+<body>
+
+
+	<!-- header - the top part of the webpage, containing the logo image and site name -->
+	<header class="clearfix">
+		<!-- clearfix class used to prevent logo image from overflowing the header area -->
+		<header class="clearfix">
+			<!-- clearfix class used to prevent logo image from overflowing the header area -->
+			<a href="index.html"><img id="logoimage" src="./images/logoimg.jpeg" alt="Return to homepage"
+					title="Return to homepage"></a>
+			<a href="index.html">
+				<h2 alt="Return to homepage" title="Return to homepage">Lady A Image Gallery</h2>
+			</a>
+		</header>>
+
+		
+	</header>
+
+
+
+	<!-- main - contains the "main" section of the web page - everything between the header and the footer -->
+	<main>
+		<h1>Image Gallery</h1>
+
+
+		<!-- Photo Grid -->
+		<div class="row">
+			<div class="column">
+				<img src="images/download (1).jpeg">
+				<img src="images/download (2).jpeg">
+				<img src="images/download (3).jpeg">
+				<img src="images/download (4).jpeg">
+				<img src="images/download (5).jpeg">
+				<img src="images/download (6).jpeg">
+				<img src="images/download (7).jpeg">
+				<img src="images/download (8).jpeg">
+
+
+
+			</div>
+
+			<div class="column">
+				<img src="images/download (10).jpeg">
+				<img src="images/images (1).jpeg">
+				<img src="images/images (2).jpeg">
+				<img src="images/images (3).jpeg">
+				<img src="images/images (4).jpeg">
+				<img src="images/images (5).jpeg">
+				<img src="images/images (6).jpeg">
+				<img src="images/images (7).jpeg">
+
+
+			</div>
+
+			<div class="column">
+				<img src="images/download (11).jpeg">
+				<img src="images/images (9).jpeg">
+				<img src="images/images.jpeg">
+				<img src="images/img1.jpeg">
+				<img src="images/img3.jpeg">
+				<img src="images/img4.jpeg">
+				<img src="images/download.jpeg">
+
+			</div>
+
+			<div class="column">
+				<img src="images/download (2).jpeg">
+				<img src="images/download (9).jpeg">
+				<img src="images/images (8).jpeg">
+				<img src="images/img5.jpeg">
+				<img src="images/img6.jpeg">
+				<img src="images/img7.jpeg">
+
+			</div>
+		</div>
+
+
+	</main>
+
+	<!-- Java Script Code -->
+	<script>
+		window.onload = function () {
+			var d = new Date();
+			document.getElementById("copyright").innerHTML = d.getFullYear();
+		}
+	</script>
+	<!-- footer - the bottom section of the web page, containing the copyright information -->
+	<footer>
+		<p>&copy; <span id="copyright"></span> Lady A Image Gallery</p>
+	</footer>
+</body>
+
+</html>
